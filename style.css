@@ -1,0 +1,9 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#countdown {
+    margin-top: 50vh;
+    text-align: center;
+    font-size: 60px;
+}

@@ -3,18 +3,14 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        p {
-            text-align: center;
-            font-size: 60px;
-            margin-top: 0px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <p id="demo"></p>
+    <div id="countdown"></div>
 
     <script>
         // Set default date we're counting down to
@@ -45,14 +41,14 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            // Output the result in an element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
 
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("countdown").innerHTML = "COUNTDOWN EXPIRED";
             }
         }, 1000);
     </script>
