@@ -20,9 +20,9 @@
         console.log(url_string);
         if (url_string != "") {
             const urlParams = new URLSearchParams(url_string);
-            const mvmParam = urlParams.get('MVM')
-            if (mvmParam == "arriveeAMarseille") {
-                var countDownDate = new Date("Dec 18, 2020 17:15:00").getTime();
+            const asParam = urlParams.get('AS')
+            if (asParam == "vol") {
+                countDownDate = new Date("Feb 12, 2020 17:50:00").getTime();
             }
         }
 
