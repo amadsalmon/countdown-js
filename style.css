@@ -1,10 +1,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
+    text-align: center;
 }
 
 #countdownValue {
     margin-top: 50vh;
-    text-align: center;
     font-size: 60px;
+}
+
+#countdownTime {
+    font-style: italic;
 }
