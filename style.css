@@ -3,7 +3,7 @@ body {
     background-color: #fff;
 }
 
-#countdown {
+#countdownValue {
     margin-top: 50vh;
     text-align: center;
     font-size: 60px;
