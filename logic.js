@@ -1,5 +1,7 @@
-// Set default date we're counting down to
-var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+// Set default date we're counting down to to be next New Year
+const today = new Date();
+const nextNewYear = new Date(today.getFullYear() + 1, 0, 1);
+var countDownDate = nextNewYear;
 
 const url_string = window.location.search;
 console.log(url_string);
