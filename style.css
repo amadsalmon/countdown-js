@@ -4,14 +4,18 @@ body {
     text-align: center;
 }
 
-#countdownValue {
-    margin-top: 50vh;
+.countdownValue {
+    margin-top: 25%;
     font-size: 60px;
 }
 
-#countdownTime {
+.countdownTime {
     font-style: italic;
-}.info-toggle-container {
+}
+
+
+/** ---------- Toggle button ---------- **/
+.info-toggle-container {
     margin-top: 3vh;
     margin-left: 3vh;
     text-align: left;
