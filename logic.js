@@ -1,3 +1,16 @@
+const toggleButton = document.querySelector(".info-toggle");
+const countdownTitleDiv = document.querySelector(".countdownTitle");
+const countdownValueDiv = document.querySelector(".countdownValue");
+const countdownTimeDiv = document.querySelector(".countdownTime");
+
+/** ---------- Toggle button ---------- **/
+var isToggled = false;
+toggleButton.addEventListener("click", function () {
+    isToggled = !isToggled;
+    countdownTimeDiv.style.visibility = isToggled ? 'visible' : 'hidden';
+});
+
+
 // Set default date we're counting down to to be next New Year
 const today = new Date();
 const nextNewYear = new Date(today.getFullYear() + 1, 0, 1);
