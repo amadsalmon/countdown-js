@@ -4,13 +4,47 @@ body {
     text-align: center;
 }
 
+.countdownTitle {
+    margin-top: 4em;
+    font-size: 30px;
+}
+
 .countdownValue {
     margin-top: 25%;
     font-size: 60px;
 }
 
+ul {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
 .countdownTime {
     font-style: italic;
+}
+
+@media all and (max-width: 768px) {
+    li {
+        font-size: 1.13rem;
+        padding: 0.75rem;
+    }
+
+    li span {
+        font-size: 3.5rem;
+    }
 }
 
 

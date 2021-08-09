@@ -2,6 +2,10 @@ const toggleButton = document.querySelector(".info-toggle");
 const countdownTitleDiv = document.querySelector(".countdownTitle");
 const countdownValueDiv = document.querySelector(".countdownValue");
 const countdownTimeDiv = document.querySelector(".countdownTime");
+const daysDiv = document.getElementById("days");
+const hoursDiv = document.getElementById("hours");
+const minutesDiv = document.getElementById("minutes");
+const secondsDiv = document.getElementById("seconds");
 
 /** ---------- Toggle button ---------- **/
 var isToggled = false;
@@ -53,7 +57,10 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result
-    countdownValueDiv.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    daysDiv.innerHTML = days;
+    hoursDiv.innerHTML = hours;
+    minutesDiv.innerHTML = minutes;
+    secondsDiv.innerHTML = seconds;
 
     // If the count down is over, write some text
     if (distance < 0) {
