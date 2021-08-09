@@ -27,9 +27,8 @@ const url_string = window.location.search;
 if (url_string != "") {
     const urlParams = new URLSearchParams(url_string);
     const dateParam = urlParams.get("date");
-    const timeParam = urlParams.get("time");
     countdownTitle = urlParams.get("title") ?? "";
-
+    
     if (dateParam) {
         countDownDate = new Date(dateParam);
     }
