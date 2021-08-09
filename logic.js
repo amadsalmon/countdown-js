@@ -7,7 +7,7 @@ const countdownTimeDiv = document.querySelector(".countdownTime");
 var isToggled = false;
 toggleButton.addEventListener("click", function () {
     isToggled = !isToggled;
-    countdownTimeDiv.style.visibility = isToggled ? 'visible' : 'hidden';
+    countdownTimeDiv.style.display = isToggled ? 'block' : 'none';
 });
 
 
